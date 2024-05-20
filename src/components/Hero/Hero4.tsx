@@ -27,7 +27,7 @@ const Hero4 = () => {
           The pros of our vending machine at a sight
         </h1>
         <p className={`text-lg mb-8 ${transitionClassesX}`}>
-          Compared to classic vending machines, the Livello Smart Kiosk offers a
+          Compared to classic vending machines, the VendoSmart Smart Kiosk offers a
           clearer assortment, more space for fresh products and enables forward
           planning in connection with optimized supply chains and the reduction
           of food waste. At the same time, the focus is on the special shopping
