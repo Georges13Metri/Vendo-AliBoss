@@ -47,8 +47,8 @@ const Hero3 = () => {
               <Image
                 src="/1.webp"
                 alt="Open door"
-                layout="fill"
-                objectFit="contain"
+                fill
+                style={{ objectFit: "contain" }}
               />
             </div>
             <div
@@ -61,26 +61,24 @@ const Hero3 = () => {
               <PiNumberCircleOneLight className="text-5xl" />
               <h2 className="text-3xl font-semibold ml-2">Open</h2>
             </div>
-            <p
+            <div
               className={`border-t-2 border-white my-3 ${
                 isVisible
                   ? "transition-all duration-1000 transform translate-x-0 opacity-100"
                   : "opacity-0 transform translate-x-10"
               }`}
             >
-              <p className="mt-3">
-                With the help of contactless credit or debit cards, mobile
-                payment, your own app or with an NFC employee card.
-              </p>{" "}
-            </p>
+              With the help of contactless credit or debit cards, mobile
+              payment, your own app or with an NFC employee card.
+            </div>
           </div>
           <div className="w-full sm:w-1/3 px-4 mb-8 sm:mb-0 flex flex-col items-center">
             <div className="mb-4 h-56 w-full relative">
               <Image
                 src="/2.webp"
                 alt="Choose product"
-                layout="fill"
-                objectFit="contain"
+                fill
+                style={{ objectFit: "contain" }}
               />
             </div>
             <div
@@ -93,26 +91,24 @@ const Hero3 = () => {
               <PiNumberCircleTwoLight className="text-5xl" />
               <h2 className="text-3xl font-semibold ml-2">To choose</h2>
             </div>
-            <p
+            <div
               className={`border-t-2 border-white my-3 ${
                 isVisible
                   ? "transition-all duration-1000 transform translate-x-0 opacity-100"
                   : "opacity-0 transform translate-x-10"
               }`}
             >
-              <p className="mt-3">
-                Just help yourself. The removed products are automatically
-                recognized and displayed on the screen.
-              </p>
-            </p>
+              Just help yourself. The removed products are automatically
+              recognized and displayed on the screen.
+            </div>
           </div>
           <div className="w-full sm:w-1/3 px-4 flex flex-col items-center">
             <div className="mb-4 h-56 w-full relative">
               <Image
                 src="/3.webp"
                 alt="Enjoy product"
-                layout="fill"
-                objectFit="contain"
+                fill
+                style={{ objectFit: "contain" }}
               />
             </div>
             <div
@@ -125,18 +121,16 @@ const Hero3 = () => {
               <PiNumberCircleThreeLight className="text-5xl" />
               <h2 className="text-3xl font-semibold ml-2">Enjoy</h2>
             </div>
-            <p
+            <div
               className={`border-t-2 border-white mt-3 my-3  ${
                 isVisible
                   ? "transition-all duration-1000 transform translate-x-0 opacity-100"
                   : "opacity-0 transform translate-x-10"
               }`}
             >
-              <p className="mt-3">
-                Close the door and let it dir taste. Of course, only what you
-                have withdrawn will be charged.{" "}
-              </p>
-            </p>
+              Close the door and let it dir taste. Of course, only what you have
+              withdrawn will be charged.
+            </div>
           </div>
         </div>
       </div>

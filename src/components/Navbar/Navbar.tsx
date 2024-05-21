@@ -15,7 +15,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="bg-white p-3">
+    <nav className="bg-gray-500 p-3">
       <div
         className="container lg:w-2/3 mx-auto flex items-center
        justify-between relative "
@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
         <div>
           <button
             className="flex items-center hover:text-blue-600
-             text-black font-bold space-x-2 relative z-10"
+             text-white font-bold space-x-2 relative z-10"
             onClick={toggleMenu}
           >
             <IoMenu className="h-7 w-7" />
@@ -74,7 +74,7 @@ const Navbar: React.FC = () => {
           </button>
         </Link>
         <Link href="/">
-          <Image width={100} height={100} src="/path-to-logo.png" alt="Logo" />
+          <Image width={400} height={400} src="/logo.svg" alt="Logo" />
         </Link>
         <Link href="/">
           <button
@@ -86,10 +86,10 @@ const Navbar: React.FC = () => {
         </Link>
         <div className="flex space-x-10">
           <button title="language">
-            <GrLanguage className="h-6 w-6 text-gray-700" />
+            <GrLanguage className="h-6 w-6 text-white" />
           </button>
           <button title="users">
-            <CiUser className="h-6 w-6 text-gray-700" />
+            <CiUser className="h-6 w-6 text-white" />
           </button>
         </div>
       </div>
