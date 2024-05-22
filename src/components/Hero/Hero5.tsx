@@ -4,10 +4,10 @@ import Image from "next/image";
 const Hero5 = () => {
   return (
     <div
-      className="bg-cover bg-center relative bg-blue-600 p-20"
+      className="bg-cover bg-center relative bg-blue-600 p-5"
       style={{ backgroundImage: `url('/bg-hero5.webp')` }}
     >
-      <div className="container mx-auto px-4 lg:w-4/5 sm:w-full md:w-full ">
+      <div className="container  px-4  lg:w-4/5 mx-auto ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           {/* Left side content */}
           <div className="text-white">
@@ -45,12 +45,12 @@ const Hero5 = () => {
               <p>Energy consumption: 3,62 kWh/24h</p>
             </div>
             {/* Button */}
-            <button
+            {/* <button
               className="bg-white rounded-xl px-4 py-4 mt-4 
             text-blue-600 hover:text-white font-bold hover:bg-blue-950"
             >
               Download technical data
-            </button>
+            </button> */}
           </div>
           {/* Right side image with text */}
           <div className="flex flex-col justify-center items-center">

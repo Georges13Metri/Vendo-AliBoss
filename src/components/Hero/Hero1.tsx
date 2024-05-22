@@ -11,7 +11,7 @@ const Hero1 = () => {
        items-center"
       >
         {/* Left Section */}
-        <div className="flex flex-col justify-center lg:w-1/2 p-10 lg:pr-16">
+        <div className="flex flex-col justify-center lg:w-1/2 lg:p-10 sm:p-0">
           <h1 className="text-3xl lg:text-4xl font-bold mb-4">
             Vendo&apos;s Smart The future of VENDING MACHINES
           </h1>
@@ -27,15 +27,19 @@ const Hero1 = () => {
             <li>Real-time telemetry and analysis</li>
           </ul>
           <button
-            className="text-blue-600 bg-white py-5 rounded-lg
-           hover:bg-blue-400 hover:text-white w-1/2 text-lg font-semibold flex items-center justify-center"
+            className="text-blue-600 bg-white py-4 rounded-lg
+           hover:bg-blue-400 hover:text-white w-2/3 text-lg font-semibold 
+           flex items-center justify-center"
           >
             Get in touch <FaCircleArrowRight className="ml-2 text-3xl" />
           </button>
         </div>
 
         {/* Right Section */}
-        <div className="w-full lg:w-1/2 lg:absolute lg:bottom-0 lg:right-0 sm:relative sm:w-full sm:flex sm:justify-center">
+        <div
+          className="w-full lg:w-1/2 lg:absolute lg:bottom-0 lg:right-0 
+        sm:relative sm:w-full sm:flex sm:justify-center"
+        >
           <Image
             src="/Vendo´s Warenautomat.webp"
             alt="Smart Vending Machine"

@@ -1,3 +1,4 @@
+import Contactus from "@/components/Contact/Contactus";
 import Hero from "@/components/Hero/Hero";
 import Navbar from "@/components/Navbar/Navbar";
 
@@ -6,6 +7,7 @@ export default function Home() {
     <div>
       <Navbar />
       <Hero />
+      <Contactus />
     </div>
   );
 }

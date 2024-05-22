@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import {
   FaWeightHanging,
@@ -42,29 +43,29 @@ const Hero2 = () => {
             className="text-black flex justify-center flex-col font-bold 
           items-center sm:items-end"
           >
-            <div className="w-3/4 ">
-              <div className="flex items-center justify-center mb-6">
+            <div className="lg:w-3/4 w-full">
+              <div className="flex items-center justify-start mb-6">
                 <FaWeightHanging
                   className="inline-block mr-2 text-4xl
                  text-blue-600"
                 />
                 <p>Intelligent shelves with 3D weight sensors</p>
               </div>
-              <div className="flex items-center justify-center mb-6 ">
+              <div className="flex items-center justify-start mb-6 ">
                 <FaLightbulb className="inline-block mr-2 text-4xl text-blue-600" />
                 <p>Smart LED lighting system reacts to the environment</p>
               </div>
-              <div className="flex items-center justify-center mb-6">
+              <div className="flex items-center justify-start mb-6">
                 <FaThermometerHalf className="inline-block mr-2 text-4xl text-blue-600" />
                 <p>Temperature monitoring and regulation</p>
               </div>
-              <div className="flex items-center justify-center mb-6">
+              <div className="flex items-center justify-start mb-6">
                 <FaWifi className="inline-block mr-2 text-4xl text-blue-600" />
                 <p>
                   5G / LTE gateway router, optional (W)LAN internet connection
                 </p>
               </div>
-              <div className="flex items-center justify-center mb-6">
+              <div className="flex items-center justify-start mb-6">
                 <FaMicrochip className="inline-block mr-2 text-4xl text-blue-600" />
                 <p>Embedded microcontroller system</p>
               </div>
@@ -76,10 +77,11 @@ const Hero2 = () => {
           </div>
 
           <div className="flex justify-center">
-            <img
-              src="/vending.PNG"
+            <Image
+              width={400}
+              height={300}
+              src="/VendoSmart.png"
               alt="Smart Vending Machine"
-              className="max-w-full h-auto"
             />
           </div>
 
@@ -87,30 +89,30 @@ const Hero2 = () => {
             className="text-black flex flex-col justify-center font-bold 
           items-center sm:items-start"
           >
-            <div className="w-3/4 ">
-              <div className="flex items-center justify-center mb-6">
+            <div className="lg:w-3/4 w-full">
+              <div className="flex items-center justify-between mb-6">
                 <p>
                   Computer vision for customer analysis or product recognition
                 </p>
                 <FaEye className="inline-block ml-2 text-4xl text-blue-600" />
               </div>
-              <div className="flex items-center justify-center mb-6">
+              <div className="flex items-center justify-between mb-6">
                 <p>29&quot; HD screens for interactive video content</p>
                 <FaTv className="inline-block ml-2 text-4xl text-blue-600" />
               </div>
-              <div className="flex items-center justify-center mb-6">
+              <div className="flex items-center justify-between mb-6">
                 <p>Dolby Atmos speakers for audio guidance</p>
                 <FaVolumeUp className="inline-block ml-2 text-4xl text-blue-600" />
               </div>
-              <div className="flex items-center justify-center mb-6">
+              <div className="flex items-center justify-between mb-6">
                 <p>Proximity beacons for personalized offers</p>
                 <FaMapMarkerAlt className="inline-block ml-2 text-4xl text-blue-600" />
               </div>
-              <div className="flex items-center justify-center mb-6">
+              <div className="flex items-center justify-between mb-6">
                 <p>Electromagnetic door lock and access control system</p>
                 <FaLock className="inline-block ml-2 text-4xl text-blue-600" />
               </div>
-              <div className="flex items-center justify-center mb-6">
+              <div className="flex items-center justify-between  mb-6">
                 <p>10.1” HD touch screen interface</p>
                 <FaTabletAlt className="inline-block ml-2 text-4xl text-blue-600" />
               </div>

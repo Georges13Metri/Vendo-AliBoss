@@ -21,7 +21,7 @@ const Hero4 = () => {
     : "opacity-0 transform translate-y-5";
 
   return (
-    <div ref={ref} className="bg-white py-12 p-2 ">
+    <div ref={ref} className="bg-white py-12 p-2 text-black">
       <div className="container mx-auto text-center">
         <h1 className={`text-4xl font-bold mb-4 ${transitionClassesY}`}>
           The pros of our vending machine at a sight
@@ -39,7 +39,8 @@ const Hero4 = () => {
         </p>
         <div
           className="grid grid-cols-1 sm:grid-cols-2
-         md:grid-cols-4 gap-6 px-5 sm:w-full sm:mx-auto w-3/4  mx-auto lg:w-2/3"
+         md:grid-cols-4 gap-6 px-5 sm:w-full sm:mx-auto 
+          mx-auto lg:w-2/3"
         >
           <ContentBox
             icon={<FaShoppingCart />}

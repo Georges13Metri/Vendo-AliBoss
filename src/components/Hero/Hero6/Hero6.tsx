@@ -22,25 +22,25 @@ const Hero6 = () => {
     : "opacity-0 transform translate-y-5";
 
   return (
-    <div ref={ref} className="bg-white p-10">
-      <div className="container mx-auto text-center w-2/3">
+    <div ref={ref} className="bg-white p-10 text-black">
+      <div className="container mx-auto text-center lg:w-1/2">
         <h1 className={`text-4xl font-bold mb-4 ${transitionClassesY}`}>
-          Innovation in a Variety of Industries: The Diverse Applications of
-          Livello Vending Machines
+          Vendosmart operations is powered by hostmind.ae catering. We provide a
+          delicious selection of cold sandwiches, hot meals, salads, desserts
+          and drinks. All our food items are freshly prepared, replenished and
+          replaced daily .
         </h1>
       </div>
       <div>
         <p
-          className={`text-lg mb-8 lg:w-3/4 md:w-full p-2
+          className={` mb-8 lg:w-1/2 md:w-full p-2 font-semibold
+           text-black text-2xl text-center
            mx-auto  ${transitionClassesX}`}
         >
-          Livello vending machines offer flexibility for use in a variety of
-          industries. Whether in retail, hospitality, public facilities, or in
-          the industrial sector, our machines can be placed in almost any
-          location and help improve the efficiency and profitability of your
-          business.
+          Slide to view some of the items in our fridges
         </p>
       </div>
+
       <div>
         <Slider boxes={boxes} />
       </div>

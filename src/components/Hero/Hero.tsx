@@ -6,6 +6,7 @@ import Hero4 from "./Hero4";
 import Hero5 from "./Hero5";
 import Hero6 from "./Hero6/Hero6";
 import Hero7 from "./Hero7";
+import Hero8 from "./Hero8";
 
 const Hero = () => {
   return (
@@ -17,6 +18,7 @@ const Hero = () => {
       <Hero5 />
       <Hero6 />
       <Hero7 />
+      {/* <Hero8 /> */}
     </div>
   );
 };

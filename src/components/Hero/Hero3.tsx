@@ -19,7 +19,8 @@ const Hero3 = () => {
   return (
     <div
       ref={ref}
-      className="bg-gradient-to-r from-blue-950 via-blue-600 to-blue-950 text-white py-12"
+      className="bg-gradient-to-r from-blue-950 via-blue-600
+       to-blue-950 text-white py-12"
     >
       <div className="container mx-auto text-center">
         <h1
