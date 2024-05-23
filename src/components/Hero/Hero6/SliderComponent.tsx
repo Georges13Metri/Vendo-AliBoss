@@ -3,6 +3,9 @@ import Image from "next/image";
 import React, { useState, useEffect, useRef } from "react";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 
+// If supporting older browsers, import the polyfill
+import "intersection-observer";
+
 interface Box {
   bgImage: string;
   title: string;
@@ -19,6 +22,7 @@ const Slider: React.FC<SliderProps> = ({ boxes }) => {
   const [maxVisibleBoxes, setMaxVisibleBoxes] = useState(4);
   const spaceBetweenBoxes = 20;
   const containerRef = useRef<HTMLDivElement>(null);
+  const sliderRef = useRef<HTMLDivElement>(null);
   const autoScrollInterval = 5000;
 
   const calculateMaxVisibleBoxes = () => {
@@ -54,16 +58,44 @@ const Slider: React.FC<SliderProps> = ({ boxes }) => {
   }, []);
 
   useEffect(() => {
-    const intervalId = setInterval(() => {
-      handleScroll("right");
-    }, autoScrollInterval);
+    let intervalId: NodeJS.Timeout;
+    const observerCallback = (entries: IntersectionObserverEntry[]) => {
+      const [entry] = entries;
+      if (entry.isIntersecting) {
+        intervalId = setInterval(() => {
+          handleScroll("right");
+        }, autoScrollInterval);
+      } else {
+        clearInterval(intervalId);
+      }
+    };
 
-    return () => clearInterval(intervalId);
+    const observerOptions = {
+      threshold: 0.5,
+    };
+
+    const observer = new IntersectionObserver(
+      observerCallback,
+      observerOptions
+    );
+    if (sliderRef.current) {
+      observer.observe(sliderRef.current);
+    }
+
+    return () => {
+      if (sliderRef.current) {
+        observer.unobserve(sliderRef.current);
+      }
+      clearInterval(intervalId);
+    };
   }, [currentIndex]);
 
   return (
     <div className="relative overflow-hidden" ref={containerRef}>
-      <div className="flex items-center overflow-x-auto no-scrollbar h-[300px]">
+      <div
+        className="flex items-center overflow-x-auto no-scrollbar h-[300px]"
+        ref={sliderRef}
+      >
         <button
           title="left"
           onClick={() => handleScroll("left")}
