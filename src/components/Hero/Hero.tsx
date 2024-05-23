@@ -17,8 +17,8 @@ const Hero = () => {
       <Hero4 />
       <Hero5 />
       <Hero6 />
+      <Hero8 />
       <Hero7 />
-      {/* <Hero8 /> */}
     </div>
   );
 };

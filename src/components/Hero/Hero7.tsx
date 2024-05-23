@@ -23,11 +23,11 @@ const Hero7 = () => {
     <div
       ref={ref}
       className="bg-white flex p-10 items-center 
-    flex-col text-black"
+    flex-col text-black min-h-screen justify-center"
     >
       <h1
         className={`text-4xl font-bold mb-10 md:w-full lg:w-1/2 
-      text-center w-full ${transitionClassesY}`}
+      text-center w-full text-blue-950 ${transitionClassesY}`}
       >
         VendoSmart vs Traditional Vending Machines
       </h1>
@@ -48,7 +48,7 @@ const Hero7 = () => {
               </td>
               <td
                 className="border-b-2 border-gray-400 
-                text-white text-center text-2xl bg-gray-500"
+                text-white text-center text-3xl bg-gray-500"
               >
                 Vending Machines
               </td>

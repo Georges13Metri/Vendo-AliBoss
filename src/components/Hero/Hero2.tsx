@@ -17,11 +17,14 @@ import {
 
 const Hero2 = () => {
   return (
-    <div className="bg-white py-12 px-4 sm:px-6 lg:px-8">
+    <div
+      className="bg-white py-12 px-4 sm:px-6 lg:px-8 flex 
+    items-center min-h-screen"
+    >
       <div className="max-w-7xl mx-auto">
         <h1
           className="text-3xl lg:text-4xl font-bold
-         text-gray-800 mb-4 sm:text-center"
+         text-blue-950 mb-4 sm:text-center"
         >
           The vending system for efficient and flexible shopping
         </h1>
@@ -47,30 +50,30 @@ const Hero2 = () => {
               <div className="flex items-center justify-start mb-6">
                 <FaWeightHanging
                   className="inline-block mr-2 text-4xl
-                 text-blue-600"
+                 text-blue-950"
                 />
                 <p>Intelligent shelves with 3D weight sensors</p>
               </div>
               <div className="flex items-center justify-start mb-6 ">
-                <FaLightbulb className="inline-block mr-2 text-4xl text-blue-600" />
+                <FaLightbulb className="inline-block mr-2 text-4xl text-blue-950" />
                 <p>Smart LED lighting system reacts to the environment</p>
               </div>
               <div className="flex items-center justify-start mb-6">
-                <FaThermometerHalf className="inline-block mr-2 text-4xl text-blue-600" />
+                <FaThermometerHalf className="inline-block mr-2 text-4xl text-blue-950" />
                 <p>Temperature monitoring and regulation</p>
               </div>
               <div className="flex items-center justify-start mb-6">
-                <FaWifi className="inline-block mr-2 text-4xl text-blue-600" />
+                <FaWifi className="inline-block mr-2 text-4xl text-blue-950" />
                 <p>
                   5G / LTE gateway router, optional (W)LAN internet connection
                 </p>
               </div>
               <div className="flex items-center justify-start mb-6">
-                <FaMicrochip className="inline-block mr-2 text-4xl text-blue-600" />
+                <FaMicrochip className="inline-block mr-2 text-4xl text-blue-950" />
                 <p>Embedded microcontroller system</p>
               </div>
               <div className="flex items-center justify-start mb-6 ">
-                <FaCubes className="inline-block mr-2 text-4xl text-blue-600" />
+                <FaCubes className="inline-block mr-2 text-4xl text-blue-950" />
                 <p>Single or double fridge</p>
               </div>
             </div>
@@ -94,27 +97,27 @@ const Hero2 = () => {
                 <p>
                   Computer vision for customer analysis or product recognition
                 </p>
-                <FaEye className="inline-block ml-2 text-4xl text-blue-600" />
+                <FaEye className="inline-block ml-2 text-4xl text-custom-teal" />
               </div>
               <div className="flex items-center justify-between mb-6">
                 <p>29&quot; HD screens for interactive video content</p>
-                <FaTv className="inline-block ml-2 text-4xl text-blue-600" />
+                <FaTv className="inline-block ml-2 text-4xl text-custom-teal" />
               </div>
               <div className="flex items-center justify-between mb-6">
                 <p>Dolby Atmos speakers for audio guidance</p>
-                <FaVolumeUp className="inline-block ml-2 text-4xl text-blue-600" />
+                <FaVolumeUp className="inline-block ml-2 text-4xl text-custom-teal" />
               </div>
               <div className="flex items-center justify-between mb-6">
                 <p>Proximity beacons for personalized offers</p>
-                <FaMapMarkerAlt className="inline-block ml-2 text-4xl text-blue-600" />
+                <FaMapMarkerAlt className="inline-block ml-2 text-4xl text-custom-teal" />
               </div>
               <div className="flex items-center justify-between mb-6">
                 <p>Electromagnetic door lock and access control system</p>
-                <FaLock className="inline-block ml-2 text-4xl text-blue-600" />
+                <FaLock className="inline-block ml-2 text-4xl text-custom-teal" />
               </div>
               <div className="flex items-center justify-between  mb-6">
                 <p>10.1” HD touch screen interface</p>
-                <FaTabletAlt className="inline-block ml-2 text-4xl text-blue-600" />
+                <FaTabletAlt className="inline-block ml-2 text-4xl text-custom-teal" />
               </div>
             </div>
           </div>

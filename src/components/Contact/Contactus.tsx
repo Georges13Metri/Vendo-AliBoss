@@ -40,9 +40,9 @@ const Contactus = () => {
       //   "service_hzoxbgd",
       //   "template_pk580mo",
       //   {
-      //     from_name: `${formData.firstName} ${formData.lastName}`,
+      //     from_name: `${formData.firstName} ${formData.surname}`,
       //     from_email: formData.email,
-      //     message: `${formData.comment}\nEmail: ${formData.email}\nPhone Number: ${formData.phoneNumber}`,
+      //     message: `${formData.message}\nEmail: ${formData.email}\nPhone Number: ${formData.phoneNumber}`,
       //   },
       //   "HRxkfw62Pr66w8EJV"
       // );
@@ -69,15 +69,17 @@ const Contactus = () => {
 
   return (
     <div
-      className=" flex flex-col p-3 
-       gap-8  "
+      id="contactUs"
+      className=" flex flex-col p-10 
+       gap-8  items-center bg-gradient-to-r from-blue-950 via-blue-800
+       to-blue-950"
     >
       <div
         className="flex flex-col justify-center items-center 
       mx-auto "
       >
-        <h2 className="text-3xl font-bold mb-4 text-blue-700 text-center">
-          We look forward to hearing from you!
+        <h2 className="text-5xl font-bold mb-4 text-custom-yellow text-center">
+          Contact Us
         </h2>
         <form onSubmit={handleSubmit}>
           <div className="mb-4 flex flex-col lg:flex-row">
@@ -147,8 +149,8 @@ const Contactus = () => {
           </div>
           <button
             type="submit"
-            className=" bg-blue-800 text-white
-               hover:bg-blue-300 border border-black py-3 px-10
+            className=" bg-white text-custom-yellow text-xl
+               hover:bg-blue-950 hover:text-white border  py-3 px-10
                 font-bold"
             disabled={loading}
           >

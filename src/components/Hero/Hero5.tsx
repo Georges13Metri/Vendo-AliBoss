@@ -4,14 +4,16 @@ import Image from "next/image";
 const Hero5 = () => {
   return (
     <div
-      className="bg-cover bg-center relative bg-blue-600 p-5"
-      style={{ backgroundImage: `url('/bg-hero5.webp')` }}
+      className="bg-gradient-to-r from-blue-950 via-blue-800
+      to-blue-950  min-h-screen p-5 lg:p-0 flex items-center"
     >
       <div className="container  px-4  lg:w-4/5 mx-auto ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           {/* Left side content */}
           <div className="text-white">
-            <h2 className="text-3xl font-bold mb-4">TECHNICAL DETAILS</h2>
+            <h2 className="text-4xl font-bold mb-4 text-custom-yellow">
+              TECHNICAL DETAILS
+            </h2>
             <div className="">
               <h3 className="font-bold">Models: Single or double fridge</h3>
               <div>

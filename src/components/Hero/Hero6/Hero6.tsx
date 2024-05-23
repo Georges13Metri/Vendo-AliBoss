@@ -22,10 +22,12 @@ const Hero6 = () => {
     : "opacity-0 transform translate-y-5";
 
   return (
-    <div ref={ref} className="bg-white p-10 text-black">
+    <div id="hero6" ref={ref} className="bg-white p-10 text-gray-600">
       <div className="container mx-auto text-center lg:w-1/2">
-        <h1 className={`text-4xl font-bold mb-4 ${transitionClassesY}`}>
-          Vendosmart operations is powered by hostmind.ae catering. We provide a
+        <h1
+          className={`text-4xl font-bold mb-4 text-blue-950 ${transitionClassesY}`}
+        >
+          Vendosmart operations is powered by Fresh Mix catering. We provide a
           delicious selection of cold sandwiches, hot meals, salads, desserts
           and drinks. All our food items are freshly prepared, replenished and
           replaced daily .
@@ -34,8 +36,8 @@ const Hero6 = () => {
       <div>
         <p
           className={` mb-8 lg:w-1/2 md:w-full p-2 font-semibold
-           text-black text-2xl text-center
-           mx-auto  ${transitionClassesX}`}
+           text-2xl text-center
+           mx-auto text-gray-600  ${transitionClassesX}`}
         >
           Slide to view some of the items in our fridges
         </p>

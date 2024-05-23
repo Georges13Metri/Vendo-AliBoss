@@ -21,13 +21,18 @@ const Hero4 = () => {
     : "opacity-0 transform translate-y-5";
 
   return (
-    <div ref={ref} className="bg-white py-12 p-2 text-black">
+    <div
+      ref={ref}
+      className="bg-white  p-2 text-black min-h-screen flex items-center"
+    >
       <div className="container mx-auto text-center">
-        <h1 className={`text-4xl font-bold mb-4 ${transitionClassesY}`}>
+        <h1
+          className={`text-4xl font-bold mb-4 text-blue-950 ${transitionClassesY}`}
+        >
           The pros of our vending machine at a sight
         </h1>
         <p
-          className={`text-lg mb-8 lg:w-3/4 md:w-full p-2
+          className={`text-lg mb-8 lg:w-3/4 md:w-full p-2 text-gray-600
            mx-auto  ${transitionClassesX}`}
         >
           Compared to classic vending machines, the VendoSmart Smart Kiosk
@@ -87,7 +92,7 @@ const ContentBox: React.FC<ContentBoxProps> = ({
 }) => (
   <div className="border p-4 rounded-lg bg-blue-100 py-20 ">
     <div
-      className={`flex justify-center text-6xl text-blue-600 ${transitionClassesY}`}
+      className={`flex justify-center text-6xl text-blue-950 ${transitionClassesY}`}
     >
       {icon}
     </div>

@@ -19,12 +19,12 @@ const Hero3 = () => {
   return (
     <div
       ref={ref}
-      className="bg-gradient-to-r from-blue-950 via-blue-600
-       to-blue-950 text-white py-12"
+      className="bg-gradient-to-r from-blue-950 via-blue-800
+       to-blue-950 text-white py-12 min-h-screen items-center flex"
     >
       <div className="container mx-auto text-center">
         <h1
-          className={`text-4xl font-bold mb-4 ${
+          className={`text-4xl font-bold mb-4 text-custom-yellow ${
             isVisible
               ? "transition-all duration-1000 transform translate-y-0 opacity-100"
               : "opacity-0 transform translate-y-5"

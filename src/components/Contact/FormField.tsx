@@ -28,7 +28,7 @@ const FormField: React.FC<FormFieldProps> = ({
   rows,
 }) => (
   <div className={rows ? "col-span-1" : ""}>
-    <label htmlFor={id} className="block text-gray-700 font-bold mb-2">
+    <label htmlFor={id} className="block text-white font-bold mb-2">
       {label}
     </label>
     {type === "textarea" ? (

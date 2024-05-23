@@ -6,6 +6,7 @@ import { CiUser } from "react-icons/ci";
 import { menuItems } from "./menuItems";
 import Link from "next/link";
 import Image from "next/image";
+import { Link as ScrollLink } from "react-scroll";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -15,19 +16,17 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="bg-gray-400 p-3">
-      <div
-        className="container lg:w-2/3 mx-auto flex items-center
-       justify-between relative "
-      >
+    <nav className="bg-blue-950 p-3">
+      <div className="container lg:w-2/3 mx-auto flex items-center justify-between relative">
         <div>
           <button
-            className="flex items-center hover:text-blue-600
-             text-white font-bold space-x-2 relative z-10 text-xl"
+            className="flex items-center hover:text-custom-yellow hover:bg-white
+             text-custom-yellow  font-bold 
+            space-x-2 relative z-10 text-xl"
             onClick={toggleMenu}
           >
             <IoMenu className="h-7 w-7" />
-            <span className="hover:border-b-2 border-blue-800">MENU</span>
+            <span className=" ">MENU</span>
           </button>
           {isMenuOpen && (
             <>
@@ -36,9 +35,8 @@ const Navbar: React.FC = () => {
                 onClick={toggleMenu}
               ></div>
               <div
-                className="fixed top-0 left-0 h-full  bg-gradient-to-r
-               from-blue-500 via-blue-700 to-blue-900 shadow-lg z-50 flex 
-               flex-col"
+                className="fixed top-0 left-0 h-full bg-gradient-to-r
+               from-blue-500 via-blue-700 to-blue-900 shadow-lg z-50 flex flex-col"
               >
                 <div className="p-10">
                   <button
@@ -54,8 +52,7 @@ const Navbar: React.FC = () => {
                   {menuItems.map((item, index) => (
                     <li
                       key={index}
-                      className="px-4 py-2 hover:bg-blue-800
-                      cursor-pointer "
+                      className="px-4 py-2 hover:bg-blue-800 cursor-pointer"
                     >
                       <Link href={item.href}>{item.label}</Link>
                     </li>
@@ -67,8 +64,9 @@ const Navbar: React.FC = () => {
         </div>
         <Link href="/">
           <button
-            className="hidden sm:inline-block font-bold text-blue-600
-         hover:bg-blue-600 hover:text-white px-3 py-2 text-xl"
+            className="hidden sm:inline-block font-bold
+           text-custom-yellow hover:bg-white hover:text-custom-yellow
+            px-3 py-2 text-xl"
           >
             TECHNOLOGIES
           </button>
@@ -76,20 +74,21 @@ const Navbar: React.FC = () => {
         <Link href="/">
           <Image width={400} height={400} src="/logo.svg" alt="Logo" />
         </Link>
-        <Link href="/">
-          <button
-            className="hidden sm:inline-block font-bold text-blue-600
-         hover:bg-blue-600 hover:text-white px-3 py-2 text-xl"
-          >
-            CATERING
-          </button>
-        </Link>
+        <ScrollLink
+          to="hero6"
+          spy={true}
+          smooth={true}
+          duration={500}
+          className="hidden sm:inline-block font-bold hover:text-custom-yellow hover:bg-white text-custom-yellow px-3 py-2 text-xl"
+        >
+          CATERING
+        </ScrollLink>
         <div className="flex space-x-2">
           <button title="language">
-            <GrLanguage className="h-6 w-6 text-white" />
+            <GrLanguage className="h-6 w-6 text-white hover:text-custom-yellow" />
           </button>
           <button title="users">
-            <CiUser className="h-8 w-8 text-white " />
+            <CiUser className="h-8 w-8 text-white hover:text-custom-yellow" />
           </button>
         </div>
       </div>
