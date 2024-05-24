@@ -4,35 +4,24 @@ import React, { useEffect, useState } from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import { IoMdCloseCircle } from "react-icons/io";
 import { useInView } from "react-intersection-observer";
+import TransitionWrapper from "../TransitionWrapper";
 
 const Hero7 = () => {
-  const [ref, inView] = useInView();
-  const [isVisible, setIsVisible] = useState(false);
-
-  useEffect(() => {
-    if (inView && !isVisible) {
-      setIsVisible(true);
-    }
-  }, [inView, isVisible]);
-
-  const transitionClassesY = isVisible
-    ? "transition-transform duration-1000 transform translate-y-0 opacity-100"
-    : "opacity-0 transform translate-y-10";
-
   return (
     <div
-      ref={ref}
-      className="bg-white flex p-10 items-center 
+      className="bg-white flex p-5 items-center 
     flex-col text-black min-h-screen justify-center"
     >
-      <h1
-        className={`text-4xl font-bold mb-10 md:w-full lg:w-1/2 
-      text-center w-full text-blue-950 ${transitionClassesY}`}
-      >
-        VendoSmart vs Traditional Vending Machines
-      </h1>
+      <TransitionWrapper direction="y" offset="20">
+        <h1
+          className="text-4xl font-bold mb-10  
+      text-center w-full text-blue-950"
+        >
+          VendoSmart vs Traditional Vending Machines
+        </h1>
+      </TransitionWrapper>
       <div className="overflow-x-auto w-full no-scrollbar">
-        <table className="lg:w-4/5 sm:w-full md:w-full mx-auto table-fixed">
+        <table className="lg:w-4/5 sm:w-full md:w-full mx-auto">
           <tbody>
             <tr>
               <td className="border-b-2 border-gray-400 w-1/2"></td>
