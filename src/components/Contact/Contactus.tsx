@@ -67,7 +67,7 @@ const Contactus = () => {
 
   return (
     <div
-      id="contactUs"
+      id="contactus"
       className=" flex flex-col 
        gap-10  items-center bg-gradient-to-r from-blue-950 via-blue-800
        to-blue-950 pb-10"
