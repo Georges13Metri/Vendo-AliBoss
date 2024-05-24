@@ -1,5 +1,5 @@
 export const menuItems = [
-  { label: "Home", href: "/" },
+  // { label: "Home", href: "/" },
   { label: "Smart-fridge", href: "#hero3" },
   { label: "Catering", href: "#hero6" },
   { label: "VendoSmart Technologies", href: "#hero5" },

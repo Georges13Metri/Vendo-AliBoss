@@ -2,8 +2,11 @@
 import React, { useEffect } from "react";
 import Image from "next/image";
 import { FaCircleArrowRight } from "react-icons/fa6";
+import { useInView } from "react-intersection-observer";
 
 const Hero1 = () => {
+  const [ref, inView] = useInView();
+
   useEffect(() => {
     const handleScroll = () => {
       const element = document.getElementById("contactus");
@@ -25,7 +28,7 @@ const Hero1 = () => {
   }, []);
 
   return (
-    <div className="relative">
+    <div className="relative" ref={ref}>
       <div
         className="bg-gradient-to-r from-blue-950 via-blue-950 to-blue-600
        text-white min-h-[600px]  lg:px-32  flex flex-col lg:flex-row  
