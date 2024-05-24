@@ -34,8 +34,6 @@ const Contactus = () => {
     setError(null);
 
     try {
-      console.log("Submitting form data:", formData);
-
       // await emailjs.send(
       //   "service_hzoxbgd",
       //   "template_pk580mo",
@@ -70,115 +68,110 @@ const Contactus = () => {
   return (
     <div
       id="contactUs"
-      className=" flex flex-col p-10 
-       gap-8  items-center bg-gradient-to-r from-blue-950 via-blue-800
-       to-blue-950"
+      className=" flex flex-col 
+       gap-10  items-center bg-gradient-to-r from-blue-950 via-blue-800
+       to-blue-950 pb-10"
     >
-      <div
-        className="flex flex-col justify-center items-center 
-      mx-auto "
-      >
-        <h2 className="text-5xl font-bold mb-4 text-custom-yellow text-center">
-          Contact Us
-        </h2>
-        <form onSubmit={handleSubmit}>
-          <div className="mb-4 flex flex-col lg:flex-row">
-            <div className="lg:w-1/2 lg:pr-4">
-              <FormField
-                id="firstName"
-                label="First Name"
-                type="text"
-                name="firstName"
-                value={formData.firstName}
-                onChange={handleChange}
-                //   placeholder="Enter Your First Name"
-                required
-              />
-            </div>
-            <div className="lg:w-1/2">
-              <FormField
-                id="surname"
-                label="Surname"
-                type="text"
-                name="surname"
-                value={formData.surname}
-                onChange={handleChange}
-                //   placeholder="Enter Your First Name"
-                required
-              />
-            </div>
-          </div>
-          <div className="mb-4 flex flex-col lg:flex-row">
-            <div className="lg:w-1/2 lg:pr-4">
-              <FormField
-                id="email"
-                label="Email Address"
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                //   placeholder="Enter Your First Name"
-                required
-              />
-            </div>
-            <div className="flex flex-col lg:w-1/2">
-              <FormField
-                id="phoneNumber"
-                label="Phone Number"
-                type="tel"
-                name="phoneNumber"
-                value={formData.phoneNumber}
-                onChange={handleChange}
-                //   placeholder="Enter Your First Name"
-                required
-              />
-            </div>
-          </div>
-          <div className="mb-4">
+      <h2 className="text-5xl font-bold  text-custom-yellow text-center mt-3">
+        Contact Us
+      </h2>
+      <form onSubmit={handleSubmit}>
+        <div className="mb-4 flex flex-col lg:flex-row">
+          <div className="lg:w-1/2 lg:pr-4">
             <FormField
-              id="message"
-              label="Message"
-              type="textarea"
-              name="message"
-              value={formData.message}
+              id="firstName"
+              label="First Name"
+              type="text"
+              name="firstName"
+              value={formData.firstName}
               onChange={handleChange}
-              // placeholder="Your message here"
-              rows={3}
+              //   placeholder="Enter Your First Name"
               required
             />
           </div>
-          <button
-            type="submit"
-            className=" bg-white text-custom-yellow text-xl
-               hover:bg-blue-950 hover:text-white border  py-3 px-10
-                font-bold"
-            disabled={loading}
-          >
-            {loading ? (
-              <FaSpinner
-                className="animate-spin flex mx-auto
+          <div className="lg:w-1/2">
+            <FormField
+              id="surname"
+              label="Surname"
+              type="text"
+              name="surname"
+              value={formData.surname}
+              onChange={handleChange}
+              //   placeholder="Enter Your First Name"
+              required
+            />
+          </div>
+        </div>
+        <div className="mb-4 flex flex-col lg:flex-row">
+          <div className="lg:w-1/2 lg:pr-4">
+            <FormField
+              id="email"
+              label="Email Address"
+              type="email"
+              name="email"
+              value={formData.email}
+              onChange={handleChange}
+              //   placeholder="Enter Your First Name"
+              required
+            />
+          </div>
+          <div className="flex flex-col lg:w-1/2">
+            <FormField
+              id="phoneNumber"
+              label="Phone Number"
+              type="tel"
+              name="phoneNumber"
+              value={formData.phoneNumber}
+              onChange={handleChange}
+              //   placeholder="Enter Your First Name"
+              required
+            />
+          </div>
+        </div>
+        <div className="mb-4">
+          <FormField
+            id="message"
+            label="Message"
+            type="textarea"
+            name="message"
+            value={formData.message}
+            onChange={handleChange}
+            // placeholder="Your message here"
+            rows={3}
+            required
+          />
+        </div>
+        <button
+          type="submit"
+          className="text-blue-950 bg-white py-4 rounded-lg
+           hover:bg-blue-950 hover:text-white w-2/3 text-lg font-semibold 
+           flex items-center justify-center"
+          disabled={loading}
+        >
+          {loading ? (
+            <FaSpinner
+              className="animate-spin flex mx-auto
                  text-black text-2xl"
-              />
-            ) : (
-              "Submit"
-            )}
-          </button>
-        </form>
-        {success && (
-          <FormMessage
-            type="success"
-            message="Your message has been sent successfully! I will get back to you soon."
-            onClose={() => setSuccess(false)}
-          />
-        )}
-        {error && (
-          <FormMessage
-            type="error"
-            message={error}
-            onClose={() => setError(null)}
-          />
-        )}
-      </div>
+            />
+          ) : (
+            "Submit"
+          )}
+        </button>
+      </form>
+      {success && (
+        <FormMessage
+          type="success"
+          message="Your message has been sent successfully! I will get back to you soon."
+          onClose={() => setSuccess(false)}
+        />
+      )}
+      {error && (
+        <FormMessage
+          type="error"
+          message={error}
+          onClose={() => setError(null)}
+        />
+      )}
     </div>
   );
 };
