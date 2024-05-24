@@ -65,7 +65,7 @@ const ContentBox: React.FC<ContentBoxProps> = ({
     <TransitionWrapper direction="y" offset="20">
       <div className="flex justify-center text-6xl text-blue-950">{icon}</div>
       <h2 className="text-xl font-semibold mt-4 text-blue-950">{title}</h2>
-      <div className="border-b-2 border-custom-teal w-1/4 mx-auto my-2"></div>
+      <div className="border-b-2 border-blue-950 w-1/4 mx-auto my-2"></div>
       <p className="text-sm text-blue-950">{description}</p>
     </TransitionWrapper>
   </div>
