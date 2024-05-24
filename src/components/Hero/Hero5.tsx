@@ -4,6 +4,7 @@ import Image from "next/image";
 const Hero5 = () => {
   return (
     <div
+      id="hero5"
       className="bg-gradient-to-r from-blue-950 via-blue-800
       to-blue-950  min-h-screen p-5 lg:p-0 flex items-center"
     >

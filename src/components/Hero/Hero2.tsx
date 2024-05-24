@@ -14,30 +14,35 @@ import {
   FaLock,
   FaTabletAlt,
 } from "react-icons/fa";
+import TransitionWrapper from "../TransitionWrapper";
 
 const Hero2 = () => {
   return (
     <div
-      className="bg-white py-12 px-4 sm:px-6 lg:px-8 flex 
+      className="bg-white flex 
     items-center min-h-screen"
     >
-      <div className="max-w-7xl mx-auto">
-        <h1
-          className="text-3xl lg:text-4xl font-bold
+      <div className="max-w-7xl mx-auto p-5">
+        <TransitionWrapper direction="y" offset="20">
+          <h1
+            className="text-3xl lg:text-4xl font-bold
          text-blue-950 mb-4 sm:text-center"
-        >
-          The vending system for efficient and flexible shopping
-        </h1>
-        <p className="text-lg text-gray-600 mb-6 sm:text-center">
-          Vendo&apos;s food vending machines revolutionize the shopping
-          experience and allow businesses to efficiently extend their reach and
-          hours of operation. Our 24/7 vending machines are flexible for use in
-          commercial or residential settings and offer cashless payment options.
-          Give your customers a seamless shopping experience with cashless
-          payment options and an intelligent product assortment. With our white
-          label option, you can customize the Smart Fridge to match your
-          branding and reinforce your brand.
-        </p>
+          >
+            The vending system for efficient and flexible shopping
+          </h1>
+        </TransitionWrapper>
+        <TransitionWrapper direction="x" offset="20">
+          <p className="text-lg text-gray-600 mb-6 sm:text-center">
+            Vendo&apos;s food vending machines revolutionize the shopping
+            experience and allow businesses to efficiently extend their reach
+            and hours of operation. Our 24/7 vending machines are flexible for
+            use in commercial or residential settings and offer cashless payment
+            options. Give your customers a seamless shopping experience with
+            cashless payment options and an intelligent product assortment. With
+            our white label option, you can customize the Smart Fridge to match
+            your branding and reinforce your brand.
+          </p>
+        </TransitionWrapper>
         <div
           className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-8 p-5 
         sm:mx-auto md:mx-auto"
