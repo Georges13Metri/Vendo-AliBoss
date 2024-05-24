@@ -69,7 +69,7 @@ const Contactus = () => {
     <div
       id="contactus"
       className=" flex flex-col 
-       gap-10  items-center bg-gradient-to-r from-blue-950 via-blue-800
+       gap-10  items-center bg-gradient-to-r from-blue-950 via-blue-950
        to-blue-950 pb-10"
     >
       <h2 className="text-5xl font-bold  text-custom-yellow text-center mt-3">

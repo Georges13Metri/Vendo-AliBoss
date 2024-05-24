@@ -27,7 +27,7 @@ const Hero1 = () => {
   return (
     <div className="relative">
       <div
-        className="bg-gradient-to-r from-blue-950 via-blue-800 to-blue-600
+        className="bg-gradient-to-r from-blue-950 via-blue-950 to-blue-600
        text-white min-h-[600px]  lg:px-32  flex flex-col lg:flex-row  
        items-center"
       >
@@ -58,7 +58,7 @@ const Hero1 = () => {
         </div>
 
         {/* Right Section */}
-        <div className="w-full lg:w-1/2 lg:absolute lg:bottom-0 lg:right-0">
+        <div className="w-full lg:w-1/2 lg:absolute lg:bottom-0 lg:right-0 ">
           <Image
             src="/vending_machine3.png"
             alt="Smart Vending Machine"

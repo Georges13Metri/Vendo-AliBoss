@@ -44,34 +44,45 @@ const Hero7 = () => {
             </tr>
             {/* Row 1 */}
             <tr>
-              <td className="border-b-2 border-gray-400 p-2 ">
-                Easy to move / low weight
+              <td className="border-b-2 border-gray-400 p-2 text-blue-950">
+                <p className="font-bold text-blue-950">
+                  Easy to move / low weight
+                </p>
               </td>
               <td className="border-b-2 border-gray-400 p-2">
                 <span className="inline-flex items-center">
                   <FaCheckCircle className="mr-2 flex-shrink-0 text-lg text-blue-950" />
-                  Lightweight (110 kg)
+                  <p className="font-bold text-blue-950">
+                    {" "}
+                    Lightweight (110 kg)
+                  </p>
                 </span>
               </td>
               <td className="border-b-2 border-gray-400 p-2">
                 <span className="inline-flex items-center">
                   <IoMdCloseCircle className="mr-2 flex-shrink-0 text-xl text-gray-600" />
-                  Heavy / Large (+350 kg)
+                  <p className="font-bold text-blue-950">
+                    {" "}
+                    Heavy / Large (+350 kg)
+                  </p>
                 </span>
               </td>
             </tr>
             {/* Row 2 */}
             <tr>
-              <td className="border-b-2 border-gray-400 p-2 bg-gray-100 ">
-                Flexible merchandising format
+              <td className="border-b-2 border-gray-400 p-2 bg-blue-100 ">
+                <p className="font-bold text-blue-950">
+                  {" "}
+                  Flexible merchandising format
+                </p>
               </td>
-              <td className="border-b-2 border-gray-400 p-2 bg-gray-100">
+              <td className="border-b-2 border-gray-400 p-2 bg-blue-100">
                 <span className="inline-flex items-center">
                   <FaCheckCircle className="mr-2 flex-shrink-0 text-lg text-blue-950" />
                   Sell any product
                 </span>
               </td>
-              <td className="border-b-2 border-gray-400 p-2 bg-gray-100 ">
+              <td className="border-b-2 border-gray-400 p-2 bg-blue-100 ">
                 <span className="inline-flex items-center">
                   <IoMdCloseCircle className="mr-2 flex-shrink-0 text-xl text-gray-600" />
                   Only pre-sized slots
@@ -98,16 +109,16 @@ const Hero7 = () => {
             </tr>
             {/* Row 4 */}
             <tr>
-              <td className="border-b-2 border-gray-400 p-2 bg-gray-100">
+              <td className="border-b-2 border-gray-400 p-2 bg-blue-100">
                 Easy to adjust / change products
               </td>
-              <td className="border-b-2 border-gray-400 p-2 bg-gray-100">
+              <td className="border-b-2 border-gray-400 p-2 bg-blue-100">
                 <span className="inline-flex items-center">
                   <FaCheckCircle className="mr-2 flex-shrink-0 text-lg text-blue-950" />
                   Easy via “Drag & Drop”
                 </span>
               </td>
-              <td className="border-b-2 border-gray-400 p-2 bg-gray-100">
+              <td className="border-b-2 border-gray-400 p-2 bg-blue-100">
                 <span className="inline-flex items-center">
                   <IoMdCloseCircle className="mr-2 flex-shrink-0 text-xl text-gray-600" />
                   Difficult configuration, requires special tools
@@ -134,16 +145,16 @@ const Hero7 = () => {
             </tr>
             {/* Row 6 */}
             <tr>
-              <td className="border-b-2 border-gray-400 p-2 bg-gray-100 ">
+              <td className="border-b-2 border-gray-400 p-2 bg-blue-100 ">
                 Maintenance -free
               </td>
-              <td className="border-b-2 border-gray-400 p-2 bg-gray-100">
+              <td className="border-b-2 border-gray-400 p-2 bg-blue-100">
                 <span className="inline-flex items-center">
                   <FaCheckCircle className="mr-2 flex-shrink-0 text-lg text-blue-950" />
                   “Plug & Play” components
                 </span>
               </td>
-              <td className="border-b-2 border-gray-400 p-2 bg-gray-100 ">
+              <td className="border-b-2 border-gray-400 p-2 bg-blue-100 ">
                 <span className="inline-flex items-center">
                   <IoMdCloseCircle className="mr-2 flex-shrink-0 text-xl text-gray-600" />
                   Intense technical maintenance, prone to errors
@@ -170,16 +181,16 @@ const Hero7 = () => {
             </tr>
             {/* Row 8 */}
             <tr>
-              <td className="border-b-2 border-gray-400 p-2 bg-gray-100 ">
+              <td className="border-b-2 border-gray-400 p-2 bg-blue-100 ">
                 Positive brand awareness
               </td>
-              <td className="border-b-2 border-gray-400 p-2 bg-gray-100">
+              <td className="border-b-2 border-gray-400 p-2 bg-blue-100">
                 <span className="inline-flex items-center">
                   <FaCheckCircle className="mr-2 flex-shrink-0 text-lg text-blue-950" />
                   People love fridges
                 </span>
               </td>
-              <td className="border-b-2 border-gray-400 p-2 bg-gray-100 ">
+              <td className="border-b-2 border-gray-400 p-2 bg-blue-100 ">
                 <span className="inline-flex items-center">
                   <IoMdCloseCircle className="mr-2 flex-shrink-0 text-xl text-gray-600" />
                   Unhealthy, outdated
@@ -206,16 +217,16 @@ const Hero7 = () => {
             </tr>
             {/* Row 10 */}
             <tr>
-              <td className="border-b-2 border-gray-400 p-2 bg-gray-100 ">
+              <td className="border-b-2 border-gray-400 p-2 bg-blue-100 ">
                 High product capacity
               </td>
-              <td className="border-b-2 border-gray-400 p-2 bg-gray-100">
+              <td className="border-b-2 border-gray-400 p-2 bg-blue-100">
                 <span className="inline-flex items-center">
                   <FaCheckCircle className="mr-2 flex-shrink-0 text-lg text-blue-950" />
                   720 cans per fridge
                 </span>
               </td>
-              <td className="border-b-2 border-gray-400 p-2 bg-gray-100 ">
+              <td className="border-b-2 border-gray-400 p-2 bg-blue-100 ">
                 <span className="inline-flex items-center">
                   <IoMdCloseCircle className="mr-2 flex-shrink-0 text-xl text-gray-600" />
                   500-180 cans
@@ -242,16 +253,16 @@ const Hero7 = () => {
             </tr>
             {/* Row 12 */}
             <tr>
-              <td className="border-b-2 border-gray-400 p-2 bg-gray-100 ">
+              <td className="border-b-2 border-gray-400 p-2 bg-blue-100 ">
                 Smart supply chain management
               </td>
-              <td className="border-b-2 border-gray-400 p-2 bg-gray-100">
+              <td className="border-b-2 border-gray-400 p-2 bg-blue-100">
                 <span className="inline-flex items-center">
                   <FaCheckCircle className="mr-2 flex-shrink-0 text-lg text-blue-950" />
                   VendoSmart Mission Control
                 </span>
               </td>
-              <td className="border-b-2 border-gray-400 p-2 bg-gray-100 ">
+              <td className="border-b-2 border-gray-400 p-2 bg-blue-100 ">
                 <span className="inline-flex items-center">
                   <IoMdCloseCircle className="mr-2 flex-shrink-0 text-xl text-gray-600" />
                   Not available
@@ -278,16 +289,16 @@ const Hero7 = () => {
             </tr>
             {/* Row 14 */}
             <tr>
-              <td className="border-b-2 border-gray-400 p-2 bg-gray-100 ">
+              <td className="border-b-2 border-gray-400 p-2 bg-blue-100 ">
                 Predictive maintenance / remote access
               </td>
-              <td className="border-b-2 border-gray-400 p-2 bg-gray-100">
+              <td className="border-b-2 border-gray-400 p-2 bg-blue-100">
                 <span className="inline-flex items-center">
                   <FaCheckCircle className="mr-2 flex-shrink-0 text-lg text-blue-950" />
                   Realtime alert system
                 </span>
               </td>
-              <td className="border-b-2 border-gray-400 p-2 bg-gray-100 ">
+              <td className="border-b-2 border-gray-400 p-2 bg-blue-100 ">
                 <span className="inline-flex items-center">
                   <IoMdCloseCircle className="mr-2 flex-shrink-0 text-xl text-gray-600" />
                   Not available

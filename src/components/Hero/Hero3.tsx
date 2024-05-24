@@ -12,7 +12,7 @@ import TransitionWrapper from "../TransitionWrapper";
 const Hero3 = () => {
   return (
     <div
-      className="bg-gradient-to-r from-blue-950 via-blue-800
+      className="bg-gradient-to-r from-blue-950 via-blue-950
        to-blue-950 text-white  min-h-screen items-center flex"
     >
       <div className="container mx-auto text-center">

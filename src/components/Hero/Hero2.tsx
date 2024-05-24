@@ -32,7 +32,7 @@ const Hero2 = () => {
           </h1>
         </TransitionWrapper>
         <TransitionWrapper direction="x" offset="20">
-          <p className="text-lg text-gray-600 mb-6 sm:text-center">
+          <p className="text-lg text-blue-950 mb-6 sm:text-center">
             Vendo&apos;s food vending machines revolutionize the shopping
             experience and allow businesses to efficiently extend their reach
             and hours of operation. Our 24/7 vending machines are flexible for
@@ -48,43 +48,49 @@ const Hero2 = () => {
         sm:mx-auto md:mx-auto"
         >
           <div
-            className="text-black flex justify-center flex-col font-bold 
-          items-center sm:items-end"
+            className="flex-col font-bold 
+         "
           >
             <div className="lg:w-3/4 w-full">
-              <div className="flex items-center justify-start mb-6">
+              <div className="flex   mb-6">
                 <FaWeightHanging
                   className="inline-block mr-2 text-4xl
-                 text-blue-950"
+                 text-custom-teal"
                 />
-                <p>Intelligent shelves with 3D weight sensors</p>
+                <p className="text-blue-950">
+                  Intelligent shelves with 3D weight sensors
+                </p>
               </div>
-              <div className="flex items-center justify-start mb-6 ">
-                <FaLightbulb className="inline-block mr-2 text-4xl text-blue-950" />
-                <p>Smart LED lighting system reacts to the environment</p>
+              <div className="flex   mb-6 ">
+                <FaLightbulb className="inline-block mr-4 text-4xl text-custom-teal" />
+                <p className="text-blue-950">
+                  Smart LED lighting system reacts to the environment
+                </p>
               </div>
-              <div className="flex items-center justify-start mb-6">
-                <FaThermometerHalf className="inline-block mr-2 text-4xl text-blue-950" />
-                <p>Temperature monitoring and regulation</p>
+              <div className="flex   mb-6">
+                <FaThermometerHalf className="inline-block mr-4 text-4xl text-custom-teal" />
+                <p className="text-blue-950">
+                  Temperature monitoring and regulation
+                </p>
               </div>
-              <div className="flex items-center justify-start mb-6">
-                <FaWifi className="inline-block mr-2 text-4xl text-blue-950" />
-                <p>
+              <div className="flex   mb-6">
+                <FaWifi className="inline-block mr-4 text-4xl text-custom-teal" />
+                <p className="text-blue-950">
                   5G / LTE gateway router, optional (W)LAN internet connection
                 </p>
               </div>
-              <div className="flex items-center justify-start mb-6">
-                <FaMicrochip className="inline-block mr-2 text-4xl text-blue-950" />
-                <p>Embedded microcontroller system</p>
+              <div className="flex   mb-6">
+                <FaMicrochip className="inline-block mr-4 text-4xl text-custom-teal" />
+                <p className="text-blue-950">Embedded microcontroller system</p>
               </div>
-              <div className="flex items-center justify-start mb-6 ">
-                <FaCubes className="inline-block mr-2 text-4xl text-blue-950" />
-                <p>Single or double fridge</p>
+              <div className="flex   mb-6 ">
+                <FaCubes className="inline-block mr-4 text-4xl text-custom-teal" />
+                <p className="text-blue-950">Single or double fridge</p>
               </div>
             </div>
           </div>
 
-          <div className="flex justify-center">
+          <div>
             <Image
               width={400}
               height={300}
@@ -94,33 +100,33 @@ const Hero2 = () => {
           </div>
 
           <div
-            className="text-black flex flex-col justify-center font-bold 
-          items-center sm:items-start"
+            className="  flex-col  font-bold lg:ml-7 
+          "
           >
             <div className="lg:w-3/4 w-full">
-              <div className="flex items-center justify-between mb-6">
+              <div className="flex  mb-6 text-blue-950">
                 <p>
                   Computer vision for customer analysis or product recognition
                 </p>
                 <FaEye className="inline-block ml-2 text-4xl text-custom-teal" />
               </div>
-              <div className="flex items-center justify-between mb-6">
+              <div className="flex  mb-6 text-blue-950">
                 <p>29&quot; HD screens for interactive video content</p>
                 <FaTv className="inline-block ml-2 text-4xl text-custom-teal" />
               </div>
-              <div className="flex items-center justify-between mb-6">
+              <div className="flex  mb-6 text-blue-950">
                 <p>Dolby Atmos speakers for audio guidance</p>
                 <FaVolumeUp className="inline-block ml-2 text-4xl text-custom-teal" />
               </div>
-              <div className="flex items-center justify-between mb-6">
+              <div className="flex  mb-6 text-blue-950">
                 <p>Proximity beacons for personalized offers</p>
                 <FaMapMarkerAlt className="inline-block ml-2 text-4xl text-custom-teal" />
               </div>
-              <div className="flex items-center justify-between mb-6">
+              <div className="flex  mb-6 text-blue-950">
                 <p>Electromagnetic door lock and access control system</p>
                 <FaLock className="inline-block ml-2 text-4xl text-custom-teal" />
               </div>
-              <div className="flex items-center justify-between  mb-6">
+              <div className="flex   mb-6 text-blue-950">
                 <p>10.1” HD touch screen interface</p>
                 <FaTabletAlt className="inline-block ml-2 text-4xl text-custom-teal" />
               </div>

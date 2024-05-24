@@ -16,7 +16,10 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <nav className="bg-blue-950 p-3">
+    <nav
+      className=" bg-gradient-to-r
+    from-blue-800 via-blue-850 to-blue-950 p-3"
+    >
       <div
         className="container lg:w-2/3 mx-auto flex items-center
        justify-between relative"
@@ -39,7 +42,7 @@ const Navbar: React.FC = () => {
               ></div>
               <div
                 className="fixed top-0 left-0 h-full bg-gradient-to-r
-               from-blue-500 via-blue-700 to-blue-900 shadow-lg z-50 flex flex-col"
+                from-blue-800 via-blue-850 to-blue-950 shadow-lg z-50 flex flex-col"
               >
                 <div className="p-10">
                   <button
@@ -55,7 +58,7 @@ const Navbar: React.FC = () => {
                   {menuItems.map((item, index) => (
                     <li
                       key={index}
-                      className="px-4 py-2 hover:bg-blue-800 cursor-pointer"
+                      className="px-4 py-2 hover:bg-blue-950 cursor-pointer"
                     >
                       {item.label === "Catering" ||
                       item.label === "VendoSmart Technologies" ? (

@@ -14,7 +14,7 @@ const Hero4 = () => {
           </h1>
         </TransitionWrapper>
         <TransitionWrapper direction="x" offset="20">
-          <p className="text-lg mb-8 lg:w-3/4 md:w-full p-2 text-gray-600 mx-auto">
+          <p className="text-lg mb-8 lg:w-3/4 md:w-full p-2 text-blue-950 mx-auto">
             Compared to classic vending machines, the VendoSmart Smart Kiosk
             offers a clearer assortment, more space for fresh products and
             enables forward planning in connection with optimized supply chains
@@ -64,9 +64,9 @@ const ContentBox: React.FC<ContentBoxProps> = ({
   <div className="border p-4 rounded-lg bg-blue-100 py-20">
     <TransitionWrapper direction="y" offset="20">
       <div className="flex justify-center text-6xl text-blue-950">{icon}</div>
-      <h2 className="text-xl font-semibold mt-4">{title}</h2>
-      <div className="border-b-2 border-black w-1/4 mx-auto my-2"></div>
-      <p className="text-sm">{description}</p>
+      <h2 className="text-xl font-semibold mt-4 text-blue-950">{title}</h2>
+      <div className="border-b-2 border-custom-teal w-1/4 mx-auto my-2"></div>
+      <p className="text-sm text-blue-950">{description}</p>
     </TransitionWrapper>
   </div>
 );

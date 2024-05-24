@@ -4,7 +4,7 @@ import Image from "next/image";
 const Hero8: React.FC = () => {
   return (
     <div
-      className="bg-gradient-to-r from-blue-950 via-blue-800
+      className="bg-gradient-to-r from-blue-950 via-blue-950
      to-blue-950 flex flex-col justify-center items-center lg:p-0 p-2
       min-h-screen"
     >

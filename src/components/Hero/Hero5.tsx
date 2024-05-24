@@ -5,7 +5,7 @@ const Hero5 = () => {
   return (
     <div
       id="hero5"
-      className="bg-gradient-to-r from-blue-950 via-blue-800
+      className="bg-gradient-to-r from-blue-950 via-blue-950
       to-blue-950  min-h-screen p-5 lg:p-0 flex items-center"
     >
       <div className="container  px-4  lg:w-4/5 mx-auto ">
