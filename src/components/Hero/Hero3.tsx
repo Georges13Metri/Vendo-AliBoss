@@ -1,18 +1,18 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 import {
   PiNumberCircleOneLight,
   PiNumberCircleTwoLight,
   PiNumberCircleThreeLight,
 } from "react-icons/pi";
-import { useInView } from "react-intersection-observer";
 import TransitionWrapper from "../TransitionWrapper";
 
 const Hero3 = () => {
   return (
     <div
-      className="bg-gradient-to-r from-blue-950 via-blue-950
+      id="hero3"
+      className="bg-gradient-to-r from-blue-950 via-blue-800
        to-blue-950 text-white  min-h-screen items-center flex"
     >
       <div className="container mx-auto text-center">
@@ -20,8 +20,7 @@ const Hero3 = () => {
           <h1 className="text-4xl font-bold mb-4 text-custom-yellow">
             How does purchasing with Vendo work?
           </h1>
-
-          <p className="text-lg mb-8">
+          <p className="text-lg mb-8 ">
             Shopping at the smart fridge takes 15 seconds, which largely avoids
             long queues
           </p>
@@ -41,7 +40,7 @@ const Hero3 = () => {
                 <PiNumberCircleOneLight className="text-5xl" />
                 <h2 className="text-3xl font-semibold ml-2">Open</h2>
               </div>
-              <div className="border-t-2 border-white my-3">
+              <div className="border-t-2 border-white my-3 ">
                 With the help of contactless credit or debit cards, mobile
                 payment, your own app or with an NFC employee card.
               </div>
@@ -61,7 +60,6 @@ const Hero3 = () => {
                 <PiNumberCircleTwoLight className="text-5xl" />
                 <h2 className="text-3xl font-semibold ml-2">To choose</h2>
               </div>
-
               <div className="border-t-2 border-white my-3">
                 Just help yourself. The removed products are automatically
                 recognized and displayed on the screen.

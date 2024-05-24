@@ -61,7 +61,12 @@ const Navbar: React.FC = () => {
                       className="px-4 py-2 hover:bg-blue-950 cursor-pointer"
                     >
                       {item.label === "Catering" ||
-                      item.label === "VendoSmart Technologies" ? (
+                      item.label === "VendoSmart Technologies" ||
+                      item.label === "VendoSmart Vending Machine" ||
+                      item.label ===
+                        "VendoSmart vs Traditional Vending Machines" ||
+                      item.label === "Smart-fridge" ||
+                      item.label === "Data Protrection" ? (
                         <ScrollLink
                           to={item.href.substring(1)}
                           spy={true}

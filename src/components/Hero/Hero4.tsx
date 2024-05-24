@@ -1,12 +1,14 @@
 "use client";
 import React from "react";
-import Image from "next/image";
 import { FaShoppingCart, FaBoxes, FaShieldAlt, FaLeaf } from "react-icons/fa";
 import TransitionWrapper from "../TransitionWrapper";
 
 const Hero4 = () => {
   return (
-    <div className="bg-white p-2 text-black min-h-screen flex items-center">
+    <div
+      id="hero4"
+      className="bg-white p-2 text-black min-h-screen flex items-center"
+    >
       <div className="container mx-auto text-center">
         <TransitionWrapper direction="y" offset="20">
           <h1 className="text-4xl font-bold mb-4 text-blue-950">
@@ -14,7 +16,7 @@ const Hero4 = () => {
           </h1>
         </TransitionWrapper>
         <TransitionWrapper direction="x" offset="20">
-          <p className="text-lg mb-8 lg:w-3/4 md:w-full p-2 text-blue-950 mx-auto">
+          <p className="text-lg mb-8 lg:w-3/4 md:w-full p-2 text-blue-950 mx-auto ">
             Compared to classic vending machines, the VendoSmart Smart Kiosk
             offers a clearer assortment, more space for fresh products and
             enables forward planning in connection with optimized supply chains
@@ -62,7 +64,7 @@ const ContentBox: React.FC<ContentBoxProps> = ({
   description,
 }) => (
   <div className="border p-4 rounded-lg bg-blue-100 py-20">
-    <TransitionWrapper direction="y" offset="20">
+    <TransitionWrapper direction="x" offset="20">
       <div className="flex justify-center text-6xl text-blue-950">{icon}</div>
       <h2 className="text-xl font-semibold mt-4 text-blue-950">{title}</h2>
       <div className="border-b-2 border-blue-950 w-1/4 mx-auto my-2"></div>

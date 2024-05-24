@@ -1,5 +1,6 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   FaWeightHanging,
   FaLightbulb,
@@ -18,16 +19,10 @@ import TransitionWrapper from "../TransitionWrapper";
 
 const Hero2 = () => {
   return (
-    <div
-      className="bg-white flex 
-    items-center min-h-screen"
-    >
-      <div className="max-w-7xl mx-auto p-5">
+    <div id="hero2" className="bg-white flex items-center min-h-screen ">
+      <div className="lg:w-4/5 w-full mx-auto p-5">
         <TransitionWrapper direction="y" offset="20">
-          <h1
-            className="text-3xl lg:text-4xl font-bold
-         text-blue-950 mb-4 sm:text-center"
-          >
+          <h1 className="text-3xl lg:text-4xl font-bold text-blue-950 mb-4 sm:text-center">
             The vending system for efficient and flexible shopping
           </h1>
         </TransitionWrapper>

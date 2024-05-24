@@ -5,22 +5,24 @@ import { useInView } from "react-intersection-observer";
 interface TransitionWrapperProps {
   children: ReactNode;
   direction?: "x" | "y";
-  offset: string;
+  offset?: string;
 }
 
 const TransitionWrapper: React.FC<TransitionWrapperProps> = ({
   children,
-  direction = "y",
-  offset = "5",
+  direction,
+  offset,
 }) => {
   const [ref, inView] = useInView();
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    if (inView && !isVisible) {
-      setIsVisible(true);
-    }
-  }, [inView, isVisible]);
+    window.scrollTo(0, 0);
+  }, []);
+
+  if (inView && !isVisible) {
+    setIsVisible(true);
+  }
 
   const transitionClasses = isVisible
     ? "transition-transform duration-1000 transform translate-0 opacity-100"
