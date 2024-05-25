@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Slider from "./SliderComponent";
 import { boxes } from "./sliderData";
 import TransitionWrapper from "@/components/TransitionWrapper";
+import SliderComponent from "./Slider";
 
 const Hero6 = () => {
   return (
@@ -23,7 +24,7 @@ const Hero6 = () => {
       </div>
 
       <div>
-        <Slider boxes={boxes} />
+        <SliderComponent boxes={boxes} />
       </div>
     </div>
   );

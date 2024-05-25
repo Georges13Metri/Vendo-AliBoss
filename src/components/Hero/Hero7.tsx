@@ -9,7 +9,7 @@ const Hero7 = () => {
   return (
     <div
       id="hero7"
-      className="bg-white flex p-1 items-center 
+      className="bg-white flex lg:p-2 p-8 items-center 
     flex-col text-black min-h-screen justify-center"
     >
       <TransitionWrapper direction="y" offset="20">
@@ -36,14 +36,14 @@ const Hero7 = () => {
                 />
               </td>
               <td
-                className="border-b-2 border-gray-400 
-                text-white text-center text-xl bg-gray-500"
+                className="border-b-2 border-gray-400 font-bold
+                text-white text-center sm:text-xl text-xs bg-gray-500"
               >
                 Vending Machines
               </td>
             </tr>
             {/* Row 1 */}
-            <tr className="text-blue-950 font-bold text-sm sm:text-base">
+            <tr className="text-blue-950 font-bold text-xs sm:text-base">
               <td className="border-b-2 border-gray-400 sm:p-2 p-1 ">
                 <p>Easy to move / low weight</p>
               </td>
@@ -61,7 +61,7 @@ const Hero7 = () => {
               </td>
             </tr>
             {/* Row 2 */}
-            <tr className="text-blue-950 font-bold text-sm sm:text-base">
+            <tr className="text-blue-950 font-bold text-xs sm:text-base">
               <td className="border-b-2 border-gray-400 sm:p-2 p-1 bg-blue-100 ">
                 <p>Flexible merchandising format</p>
               </td>
@@ -79,7 +79,7 @@ const Hero7 = () => {
               </td>
             </tr>
             {/* Row 3 */}
-            <tr className="text-blue-950 font-bold text-sm sm:text-base">
+            <tr className="text-blue-950 font-bold text-xs sm:text-base">
               <td className="border-b-2 border-gray-400 sm:p-2 p-1 ">
                 Easy replenishment / cleaning
               </td>
@@ -97,7 +97,7 @@ const Hero7 = () => {
               </td>
             </tr>
             {/* Row 4 */}
-            <tr className="text-blue-950 font-bold text-sm sm:text-base">
+            <tr className="text-blue-950 font-bold text-xs sm:text-base">
               <td className="border-b-2 border-gray-400 sm:p-2 p-1 bg-blue-100">
                 Easy to adjust / change products
               </td>
@@ -115,7 +115,7 @@ const Hero7 = () => {
               </td>
             </tr>
             {/* Row 5 */}
-            <tr className="text-blue-950 font-bold text-sm sm:text-base">
+            <tr className="text-blue-950 font-bold text-xs sm:text-base">
               <td className="border-b-2 border-gray-400 sm:p-2 p-1 ">
                 Retail experience / open shelving
               </td>
@@ -133,7 +133,7 @@ const Hero7 = () => {
               </td>
             </tr>
             {/* Row 6 */}
-            <tr className="text-blue-950 font-bold text-sm sm:text-base">
+            <tr className="text-blue-950 font-bold text-xs sm:text-base">
               <td className="border-b-2 border-gray-400 sm:p-2 p-1 bg-blue-100 ">
                 Maintenance -free
               </td>
@@ -151,7 +151,7 @@ const Hero7 = () => {
               </td>
             </tr>
             {/* Row 7 */}
-            <tr className="text-blue-950 font-bold text-sm sm:text-base">
+            <tr className="text-blue-950 font-bold text-xs sm:text-base">
               <td className="border-b-2 border-gray-400 sm:p-2 p-1 ">
                 Low cost hardware
               </td>
@@ -169,7 +169,7 @@ const Hero7 = () => {
               </td>
             </tr>
             {/* Row 8 */}
-            <tr className="text-blue-950 font-bold text-sm sm:text-base">
+            <tr className="text-blue-950 font-bold text-xs sm:text-base">
               <td className="border-b-2 border-gray-400 sm:p-2 p-1 bg-blue-100 ">
                 Positive brand awareness
               </td>
@@ -187,7 +187,7 @@ const Hero7 = () => {
               </td>
             </tr>
             {/* Row 9 */}
-            <tr className="text-blue-950 font-bold text-sm sm:text-base">
+            <tr className="text-blue-950 font-bold text-xs sm:text-base">
               <td className="border-b-2 border-gray-400 sm:p-2 p-1 ">
                 Consumer app / user loyalty features
               </td>
@@ -205,7 +205,7 @@ const Hero7 = () => {
               </td>
             </tr>
             {/* Row 10 */}
-            <tr className="text-blue-950 font-bold text-sm sm:text-base">
+            <tr className="text-blue-950 font-bold text-xs sm:text-base">
               <td className="border-b-2 border-gray-400 sm:p-2 p-1 bg-blue-100 ">
                 High product capacity
               </td>
@@ -223,7 +223,7 @@ const Hero7 = () => {
               </td>
             </tr>
             {/* Row 11 */}
-            <tr className="text-blue-950 font-bold text-sm sm:text-base">
+            <tr className="text-blue-950 font-bold text-xs sm:text-base">
               <td className="border-b-2 border-gray-400 sm:p-2 p-1 ">
                 Kiosk, user and inventory analyses
               </td>
@@ -241,7 +241,7 @@ const Hero7 = () => {
               </td>
             </tr>
             {/* Row 12 */}
-            <tr className="text-blue-950 font-bold text-sm sm:text-base">
+            <tr className="text-blue-950 font-bold text-xs sm:text-base">
               <td className="border-b-2 border-gray-400 sm:p-2 p-1 bg-blue-100 ">
                 Smart supply chain management
               </td>
@@ -259,7 +259,7 @@ const Hero7 = () => {
               </td>
             </tr>
             {/* Row 13 */}
-            <tr className="text-blue-950 font-bold text-sm sm:text-base">
+            <tr className="text-blue-950 font-bold text-xs sm:text-base">
               <td className="border-b-2 border-gray-400 sm:p-2 p-1 ">
                 Product/ shelf life tracking
               </td>
@@ -277,7 +277,7 @@ const Hero7 = () => {
               </td>
             </tr>
             {/* Row 14 */}
-            <tr className="text-blue-950 font-bold text-sm sm:text-base">
+            <tr className="text-blue-950 font-bold text-xs sm:text-base">
               <td className="border-b-2 border-gray-400 sm:p-2 p-1  bg-blue-100 ">
                 Predictive maintenance / remote access
               </td>

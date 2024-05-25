@@ -121,8 +121,10 @@ const Hero2 = () => {
                 <p>Electromagnetic door lock and access control system</p>
                 <FaLock className="inline-block ml-2 text-4xl text-custom-teal" />
               </div>
-              <div className="flex   mb-6 text-blue-950">
-                <p>10.1” HD touch screen interface</p>
+              <div className="flex  justify-between  mb-6 text-blue-950">
+                <p className="flex  items-center">
+                  10.1” HD touch screen interface
+                </p>
                 <FaTabletAlt className="inline-block ml-2 text-4xl text-custom-teal" />
               </div>
             </div>

@@ -110,14 +110,14 @@ const Navbar: React.FC = () => {
         >
           CATERING
         </ScrollLink>
-        <div className="flex justify-between lg:w-1/12">
+        {/* <div className="flex justify-between lg:w-1/12">
           <button title="language">
             <GrLanguage className="h-6 w-6 text-custom-yellow hover:text-white" />
           </button>
           <button title="users">
             <CiUser className="h-8 w-8 text-custom-yellow hover:text-white" />
           </button>
-        </div>
+        </div> */}
       </div>
     </nav>
   );
