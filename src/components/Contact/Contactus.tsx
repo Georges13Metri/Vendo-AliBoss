@@ -85,7 +85,7 @@ const Contactus = () => {
               name="firstName"
               value={formData.firstName}
               onChange={handleChange}
-              pattern="[0-9]+"
+              pattern="[A-Za-z\s]+"
               //   placeholder="Enter Your First Name"
               required
             />
@@ -98,7 +98,7 @@ const Contactus = () => {
               name="LastName"
               value={formData.LastName}
               onChange={handleChange}
-              pattern="[0-9]+"
+              pattern="[A-Za-z\s]+"
               //   placeholder="Enter Your First Name"
               required
             />
@@ -113,6 +113,7 @@ const Contactus = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
+              pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$"
               //   placeholder="Enter Your First Name"
               required
             />
