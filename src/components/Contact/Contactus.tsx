@@ -8,7 +8,7 @@ import emailjs from "emailjs-com";
 const Contactus = () => {
   const initialFormData = {
     firstName: "",
-    surname: "",
+    LastName: "",
     email: "",
     phoneNumber: "",
     message: "",
@@ -85,18 +85,20 @@ const Contactus = () => {
               name="firstName"
               value={formData.firstName}
               onChange={handleChange}
+              pattern="[0-9]+"
               //   placeholder="Enter Your First Name"
               required
             />
           </div>
           <div className="lg:w-1/2">
             <FormField
-              id="surname"
-              label="Surname"
+              id="LastName"
+              label="Last Name"
               type="text"
-              name="surname"
-              value={formData.surname}
+              name="LastName"
+              value={formData.LastName}
               onChange={handleChange}
+              pattern="[0-9]+"
               //   placeholder="Enter Your First Name"
               required
             />
@@ -123,6 +125,7 @@ const Contactus = () => {
               name="phoneNumber"
               value={formData.phoneNumber}
               onChange={handleChange}
+              pattern="[0-9]+"
               //   placeholder="Enter Your First Name"
               required
             />

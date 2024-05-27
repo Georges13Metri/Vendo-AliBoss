@@ -1,8 +1,6 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { IoMenu, IoClose } from "react-icons/io5";
-import { GrLanguage } from "react-icons/gr";
-import { CiUser } from "react-icons/ci";
 import { menuItems } from "./menuItems";
 import Link from "next/link";
 import Image from "next/image";
@@ -14,6 +12,10 @@ const Navbar: React.FC = () => {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <nav
@@ -54,7 +56,7 @@ const Navbar: React.FC = () => {
                   </button>
                 </div>
 
-                <ul className="text-white text-lg font-bold space-y-4 p-2">
+                <ul className="text-white text-lg lg:w-2/3 font-bold space-y-4 p-2">
                   {menuItems.map((item, index) => (
                     <li
                       key={index}

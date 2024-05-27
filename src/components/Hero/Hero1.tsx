@@ -37,7 +37,7 @@ const Hero1 = () => {
         {/* Left Section */}
         <div className="flex flex-col justify-center lg:w-1/2 lg:p-10 p-5">
           <h1 className="text-3xl lg:text-4xl font-bold mb-4 text-custom-yellow">
-            Vendo&apos;s Smart The future of VENDING MACHINES
+            Vendo Smart The future of VENDING MACHINES
           </h1>
           <p className="text-lg mb-4">
             An innovative sales solution to make groceries available anywhere
@@ -61,12 +61,16 @@ const Hero1 = () => {
         </div>
 
         {/* Right Section */}
-        <div className="w-full lg:w-1/2 lg:absolute lg:bottom-0 lg:right-0 ">
+        <div
+          className="w-full lg:w-1/2 lg:absolute lg:bottom-0 
+        lg:right-0 md:flex justify-center "
+        >
           <Image
             src="/vending_machine3.png"
             alt="Smart Vending Machine"
             width={400}
             height={400}
+            className="self-center"
           />
         </div>
       </div>

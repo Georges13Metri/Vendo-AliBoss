@@ -3,7 +3,6 @@ import Image from "next/image";
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
 import { IoMdCloseCircle } from "react-icons/io";
-import TransitionWrapper from "../TransitionWrapper";
 
 const Hero7 = () => {
   return (
@@ -12,14 +11,12 @@ const Hero7 = () => {
       className="bg-white flex lg:p-2 p-8 items-center 
     flex-col text-black min-h-screen justify-center"
     >
-      <TransitionWrapper direction="y" offset="20">
-        <h1
-          className="text-4xl font-bold mb-10  
+      <h1
+        className="text-4xl font-bold mb-10  
       text-center w-full text-blue-950 p-3"
-        >
-          VendoSmart vs Traditional Vending Machines
-        </h1>
-      </TransitionWrapper>
+      >
+        VendoSmart vs Traditional Vending Machines
+      </h1>
       <div className="overflow-x-auto w-full no-scrollbar">
         <table className="lg:w-4/5 sm:w-full md:w-full mx-auto table-fixed">
           <tbody>
